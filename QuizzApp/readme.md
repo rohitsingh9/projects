@@ -2,7 +2,7 @@
 
 Hello,
 
-Thank you for showing interest in the project.Test your knowledge with countless interesting quiz questions from varied categories.
+Thank you for showing interest in the project. Test your knowledge with countless interesting quiz questions from varied categories.
 
 ## Purpose of the Project -
 

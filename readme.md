@@ -7,3 +7,5 @@ My abundant energy fuels me in the pursuit of many interests, hobbies, areas of 
 
 ## Visit my portfolio
 https://rohitsingh.netlify.com/
+
+https://rohitsingh9.github.io/rohitsingh/

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Algorithm Visualization</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="icon" href="favicon.png" type="image/gif" sizes="32x32">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/magic.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/d1f3dd87b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm fixed-top navbar-dark bg-dark" id="myNavbar">
+		<a class="navbar-brand" href="#" id="logo">Algorithm Visualization</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item dropdown" id="algorithms">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Algorithms
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">A*</a>
+						<a class="dropdown-item" href="#">Dijkstra</a>
+						<!-- <a class="dropdown-item" href="#">Greedy Best-First Search</a> -->
+						<a class="dropdown-item" href="#">Breadth-First Search (BFS)</a>
+						<a class="dropdown-item" href="#">Depth-First Search (DFS)</a>
+						<!-- <a class="dropdown-item" href="#">Jump Point Search</a> -->
+					</div>
+				</li>
+				<li class="nav-item dropdown" id="mazes">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Mazes
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Random</a>
+						<a class="dropdown-item" href="#">Recursive Division</a>
+						<a class="dropdown-item" href="#">Recursive Division (Vertical Skew)</a>
+						<a class="dropdown-item" href="#">Recursive Division (Horizontal Skew)</a>
+						<a class="dropdown-item" href="#">Simple Spiral</a>
+					</div>
+				</li>
+				<li class="nav-item dropdown" id="speed">
+					<a class="nav-link dropdown-toggle speedDisplay" href="#" id="navbarDropdown" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Speed: Fast
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#">Slow</a>
+						<a class="dropdown-item" href="#">Normal</a>
+						<a class="dropdown-item" href="#">Fast</a>
+					</div>
+				</li>
+			</ul>
+
+			<button class="btn btn-outline-success btn-space" type="submit" id="startBtn">Start</button>
+			<button type="button" class="btn btn-outline-warning btn-space" type="submit" id="clearBtn">Clear</button>
+			<!-- <button type="button" class="btn btn-outline-danger disabled" type="submit" id="stopBtn">Stop</button> -->
+		</div>
+	</nav>
+
+	<div class="d-flex flex-row flex-wrap m-2 justify-content-around">
+		<div class="d-flex p-2">
+			<div class="key wall"></div>
+			<div> Wall</div>
+		</div>
+		<div class="d-flex p-2">
+			<div class="key start"></div>
+			<div>Start</div>
+		</div>
+		<div class="d-flex p-2">
+			<div class="key end"></div>
+			<div>Target</div>
+		</div>
+		<div class="d-flex p-2">
+			<div class="key searching"></div>
+			<div class="key visited"></div>
+			<div>Visited</div>
+		</div>
+		<div class="d-flex p-2">
+			<div class="key success"></div>
+			<div>Shortest-Path</div>
+		</div>
+		<div class="d-flex p-2">
+			<div class="key"></div>
+			<div>Unvisited</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column align-items-center" id="bigTableContainer">
+		<div id="tableContainer"></div>
+		<!-- <div id="update">Click or drag cells to build walls. <br />Press the 'Start' button when you finish and have
+			selected an algorithm.</div> -->
+	</div>
+
+	<div class="d-flex flex-row m-4 justify-content-center">
+		<!-- Button trigger for tutorial modal -->
+		<button type="button" class="btn btn-outline-info btn-md" id='tutorial-btn' data-toggle="modal"
+			data-target="#exampleModalLong">Tutorial</button>
+
+		<!-- Tutorial Modal -->
+		<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+			aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<div class="container-fluid" id="modalTitleContainer">
+							<h3 class="modal-title" id="exampleModalLongTitle">Welcome to Algorithm Visualization!</h3>
+						</div>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid" style="line-height: 120%">
+							<em style="font-size: 14px;">This is a quick tutorial that demonstrates how Algorithm
+								Visualization works. If
+								you want to skip this, then press the 'X' in the upper right-hand corner.</em>
+						</div>
+						<hr>
+						<div class="">
+							<div class=" d-flex flex-column">
+								<div class="">
+									<div class="card-body">
+										<h5 class="card-title">What is Algorithm Visualization?</h5>
+										<p class="card-text">
+											Algorithm Visualization is a tool to demonstarate the efficiency of
+											different
+											pathfinding
+											algorithms.
+											<br />
+											<br />
+											The objective is to traverse from the start node to the end node
+											using a pathfinding algorithm. The program can only move
+											horizontally or vertically, with each movement having a cost of one
+											unit/block.
+											<br />
+											<br />
+											Once the program is complete, the shortest path will be illuminated
+											as a yellow line showing the shortest path between any two nodes.
+										</p>
+									</div>
+								</div>
+								<br>
+								<div class="">
+									<div class="card-body ">
+										<h5 class="card-title">Step 1: Choose An Algorithm</h5>
+										<p class="card-text">Click the 'Algorithms' tab and select one of the algorithms
+											from the dropdown menu.</p>
+									</div>
+									<img class="card-img-bottom" src="images/algorithm.png" alt="Card image cap"
+										style="height: 12em">
+								</div>
+								<br>
+								<div class="">
+									<div class="card-body ">
+										<h5 class="card-title">Step 2: Draw Walls</h5>
+										<p class="card-text">Click or hold your mouse down over cells to create walls.
+										</p>
+									</div>
+									<img class="card-img-bottom" src="images/walls.png" alt="Card image cap"
+										style="height: 7em">
+								</div>
+								<br>
+								<div class="">
+									<div class="card-body ">
+										<h5 class="card-title">Step 3: Press Start</h5>
+										<p class="card-text">Press the Start button in the upper right-hand corner to
+											start your pathfinding algorithm!</p>
+									</div>
+									<img class="card-img-bottom" src="images/start.png" alt="Card image cap"
+										style="height: 8em">
+								</div>
+								<br>
+								<div class="">
+									<div class="card-body ">
+										<h5 class="card-title">Optional: Move Start/End</h5>
+										<p class="card-text">Hold the mouse down and drag the start/end node to a new
+											location.</p>
+									</div>
+									<img class="card-img-bottom" src="images/move.gif" alt="Card image cap"
+										style="height: 14em">
+								</div>
+								<br>
+								<div class="">
+									<div class="card-body ">
+										<h5 class="card-title">Optional: Mazes</h5>
+										<p class="card-text">Click the 'Mazes' tab and select one of the algorithms from
+											the dropdown menu and a randomized maze will be created for you.</p>
+									</div>
+									<img class="card-img-bottom" src="images/mazes.png" alt="Card image cap"
+										style="height: 11em">
+								</div>
+								<br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="d-flex flex-column" id="results">
+		<div class="d-flex justify-content-center">
+			<i id="resultsIcon" class="fas fa-exclamation"></i>
+		</div>
+		<div id="duration" class="d-flex justify-content-center">
+			Please select an algorithm and press start.
+		</div>
+		<div id="length" class="d-flex justify-content-center">
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

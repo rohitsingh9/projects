@@ -71,10 +71,8 @@ Your team's goal expectancy depends on your team’s attack strength and defence
 ### Poisson distribution
 The Poisson distribution is commonly used to calculate the likelihood of a specific score in football, as well as a win, lose or draw.
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
+Lets consider a hypothetical match between Man. City and Liverpool FC. Manchester is the home team, while Liverpool is the away team.
+<img src="images/1.jpg">
 
 
 

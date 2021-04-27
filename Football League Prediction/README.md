@@ -167,10 +167,14 @@ This is an example of how to list resources and calculate probability.
   epl_1819.mean()
   ```
 * Max goals (Home and Away)
-  ```epl_1819[['HomeGoals','AwayGoals']].max()```
+  ```
+  epl_1819[['HomeGoals','AwayGoals']].max()
+  ```
   
 * Chances of a Home team scoring 1 goal
-  ```poisson.pmf(1,1.575676)```
+  ```
+  poisson.pmf(1,1.575676)
+  ```
 
 
 ### Installation

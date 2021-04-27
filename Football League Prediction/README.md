@@ -131,7 +131,7 @@ In this formula:**<br />
 **λ** is the expected number of goals<br />
 **e** is Euler's number (e = 2.71828…)<br />
 **k!** is the factorial of k<br />
-
+<pre>
 **That gives us the following probability for Manchester City Goals:**<br />
 **Man. City Goals**    | 0          | 1         | 2         |3          |4           |5         | <br /> 
 **Probability**        | 0.29229258 |0.35951987 |0.22110472 |0.09065294 |0.02787578  |0.00685744| <br />
@@ -139,6 +139,7 @@ In this formula:**<br />
 **That gives us the following probability for Liverpool Goals:**<br />
 **Liverpool Goals**    | 0          | 1         | 2         |3          |4          |5         |  <br />
 **Probability**        | 0.36898474 |0.36787778 |0.18338707 |0.06094564 |0.0151907  |0.00302903|  <br />
+</pre>
 
 
 ### Prerequisites

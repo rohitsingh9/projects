@@ -19,35 +19,6 @@
 </p>
 
 
-
-<!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
-  </ol>
-</details>
-
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -177,9 +148,10 @@ This is an example of how to list resources and calculate probability.
   ```
 
 ### Conclusion
-Our main objective of building an expected goals model by exploring different Machine Learning techniques has been accomplished. Indeed, we successfully implemented modern Machine Learning algorithms such as ‘Poisson’s Distribution’ techniques to generate match outcome and match score predictions. We managed to find and improve a database containing enough information to generate expected goals metrics, through both shots and other in-game statistics, and team ratings. We have also compared our predictions to benchmark methods in order to better understand our models’ predictive performance.
+Our main objective of building an expected goals model by exploring different Machine Learning techniques has been accomplished. Indeed, we successfully implemented modern Machine Learning algorithms such as ‘Poisson’s Distribution’ techniques to generate match outcome and match score predictions. We managed to find and improve a database containing enough information to generate expected goals metrics, through both shots and other in-game statistics, and team ratings. We have also compared our predictions to benchmark methods in order to better understand our models’ predictive performance.The top four teams qualify for next season’s UEFA Champions League. The bottom three teams are relegated.<br />
+<a href="https://data.fivethirtyeight.com/#soccer-spi">Download this data.</a>
+<br />
+<br />
+<br />
 
-
-
-
-
+Design and development by <a href="https://rohitsingh.netlify.app/">Rohit Singh</a> and <a href="https://boro-blogs.netlify.app/">Sintu Boro</a>

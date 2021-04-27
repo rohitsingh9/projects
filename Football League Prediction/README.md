@@ -11,7 +11,7 @@
   <p align="center">
     An awesome project on Poisson distribution!
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://footballprediction.netlify.app/"><strong>Explore the Demo »</strong></a>
     <br />
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>

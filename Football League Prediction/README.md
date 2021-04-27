@@ -143,16 +143,36 @@ In this formula:**<br />
 
 **Predicting the match outcome based on these probabilities**<br />
 To get each possible score, simply multiply the probability of each possible score by each team by the probability of each possible score by the other team. This gives you the following distribution:<br />
-<img src="images/Goals.jpg">
+<img src="images/Goals.jpg"><br />
 As you can see, the most likely score is 1 – 1, or 1 – 0 followed by 0 – 0 or 0 – 1. Given the defence averages of both teams, it is easy to see how these would be very likely scores.<br />
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
+This is an example of how to list resources and calculate probability.
+* Getting some data
+  ```import pandas as pd
+  import matplotlib.pyplot as plt
+  import numpy as np
+  import seaborn
+  from scipy.stats import poisson,skellam
+  
+  epl_1819 = pd.read_csv("http://www.football-data.co.uk/mmz4281/1819/E0.csv")
+  epl_1819 = epl_1819[['HomeTeam','AwayTeam','FTHG','FTAG']]
+  epl_1819 = epl_1819.rename(columns={'FTHG': 'homeGoals', 'FTAG': 'AwayGoals'})
   ```
+* Truncate data to reduce the search space
+  ```epl_1819_master = epl_1819
+  epl_1819_test = epl_1819[[-10:]
+  epl_1819 = epl_1819[:-10]
+  epl_1819.mean()
+  ```
+* Max goals (Home and Away)
+  ```epl_1819[['HomeGoals','AwayGoals']].max()
+  ```
+* Chances of a Home team scoring 1 goal
+  ```poisson.pmf(1,1.575676)
+  ```
+
 
 ### Installation
 

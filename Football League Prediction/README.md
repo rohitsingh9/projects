@@ -105,32 +105,40 @@ Manchester City’s Attack Strength: 0.63 ÷ 1.147 = 0.55<br />
 **Away**<br />
 Liverpool’s Attack Strength: 0.63 ÷ 1.532 = 0.41<br />
 
-**Goal expectancy**
-Now that we have determined each team’s Attack Strength and Defence Strength, we can calculate each team’s likely score.
-**Manchester City goal expectancy**
-To determine how many goals Manchester City will likely score, we need to multiply Manchester City’s Attack Strength by Liverpool’s Defence Strength and the league’s average number of home goals.
-That gives us:
-1.96 × 0.41 × 1.532 = 1.23
+**Goal expectancy**<br />
+Now that we have determined each team’s Attack Strength and Defence Strength, we can calculate each team’s likely score.<br />
+**Manchester City goal expectancy**<br />
+To determine how many goals Manchester City will likely score, we need to multiply Manchester City’s Attack Strength by Liverpool’s Defence Strength and the league’s average number of home goals.<br />
+That gives us:<br />
+1.96 × 0.41 × 1.532 = 1.23<br />
 
-**Liverpool goal expectancy**
-To determine how many goals Liverpool will likely score, we need to multiply Liverpool’s Attack Strength by Manchester City’s Defence Strength and the league’s average number of away goals.
-That gives us:
-1.55 × 0.55 × 1.147 = 0.997
+**Liverpool goal expectancy**<br />
+To determine how many goals Liverpool will likely score, we need to multiply Liverpool’s Attack Strength by Manchester City’s Defence Strength and the league’s average number of away goals.<br />
+That gives us:<br />
+1.55 × 0.55 × 1.147 = 0.997<br />
 
-Average goals scored in the match
-**Manchester City**: 1.23
-**Liverpool**: 0.997
+Average goals scored in the match<br />
+**Manchester City**: 1.23<br />
+**Liverpool**: 0.997<br />
 
-**Using the Poisson Formula to calculate the likelihood of each possible score**
-Now that we have each team’s home and away defence and attack strengths, we can easily use them with the Poisson formula to calculate the probability of any possible outcome.
-The Poisson Formula
-**P (k events in interval) = (λk e –λ) / k! 
-In this formula:**
-**P** is the probability
-**k** is the number of occurrences in the interval (number of goals)
-**λ** is the expected number of goals
-**e** is Euler's number (e = 2.71828…)
-**k!** is the factorial of k
+**Using the Poisson Formula to calculate the likelihood of each possible score**<br />
+Now that we have each team’s home and away defence and attack strengths, we can easily use them with the Poisson formula to calculate the probability of any possible outcome.<br />
+The Poisson Formula<br />
+**P (k events in interval) = (λk e –λ) / k! <br />
+In this formula:**<br />
+**P** is the probability<br />
+**k** is the number of occurrences in the interval (number of goals)<br />
+**λ** is the expected number of goals<br />
+**e** is Euler's number (e = 2.71828…)<br />
+**k!** is the factorial of k<br />
+
+**That gives us the following probability for Manchester City Goals:**<br />
+**Man. City Goals**    | 0          | 1         | 2         |3          |4           |5         | <br /> 
+**Probability**        | 0.29229258 |0.35951987 |0.22110472 |0.09065294 |0.02787578  |0.00685744| <br />
+
+**That gives us the following probability for Liverpool Goals:**<br />
+**Liverpool Goals**    | 0          | 1         | 2         |3          |4          |5         |  <br />
+**Probability**        | 0.36898474 |0.36787778 |0.18338707 |0.06094564 |0.0151907  |0.00302903|  <br />
 
 
 ### Prerequisites

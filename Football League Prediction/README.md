@@ -57,14 +57,19 @@ As one of the most popular sports on the planet, football has always been follow
 
 We developed an ’expected goals’ metric which helps us evaluate a team’s performance, instead of using the actual number of goals scored. We combined this metric with a calculation of a team’s offensive and defensive ratings which are updated after each game and used to build a classification model predicting the outcome of future matches, as well as a regression model predicting the score of future games.
 
-Problem Statement:
+## Problem Statement
 * Large inconsistencies in many games between a team’s performance and number of goals scored or conceded
 * Many techniques predict outcome using number of goals --- which is a random element
 * We will explore different model design hypotheses and assess our models’ performance against benchmark techniques :smile:
 
 Combining two popular and modern prediction methods, namely an expected goals model as well as attacking and defensive team ratings. A successful outcome for the project would be the creation of both a classification model capable of predicting a future game’s outcome, and a regression model capable of predicting a future game’s score.
 
-### Calculating Football Results
+## Calculating Football Results
+
+### Goal Expectancy 
+Your team's goal expectancy depends on your team’s attack strength and defence strength, and as well as that of the opposite team.
+### Poisson distribution
+The Poisson distribution is commonly used to calculate the likelihood of a specific score in football, as well as a win, lose or draw.
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)

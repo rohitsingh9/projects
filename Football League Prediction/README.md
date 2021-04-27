@@ -117,7 +117,7 @@ To get each possible score, simply multiply the probability of each possible sco
 <img src="images/Goals.jpg"><br />
 As you can see, the most likely score is 1 – 1, or 1 – 0 followed by 0 – 0 or 0 – 1. Given the defence averages of both teams, it is easy to see how these would be very likely scores.<br />
 
-### Prerequisites
+### Getting Started
 
 This is an example of how to list resources and calculate probability.
 * Getting some data

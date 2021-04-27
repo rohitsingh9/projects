@@ -72,15 +72,31 @@ Your team's goal expectancy depends on your team’s attack strength and defence
 The Poisson distribution is commonly used to calculate the likelihood of a specific score in football, as well as a win, lose or draw.
 
 Lets consider a hypothetical match between Man. City and Liverpool FC. Manchester is the home team, while Liverpool is the away team.
-<img src="images/1.jpg">
+<img src="images/10.jpg">
 
+## Before calculating
 
+We need to know:
+* The total home goals scored by all EPL teams
+* The total away goals scored by all EPL teams
+* The average number of home goals and away goals per match for the whole league
 
-<!-- GETTING STARTED -->
-## Getting Started
+Calculate Manchester City’s
+* Home goal average
+* Average goals allowed per home match
+
+Calculate Liverpool’s
+* Away goal average
+* Average goals allowed per away match
+
+Data
+* In our example, we will use the data from the 2018-2019 English Premier League to calculate a hypothetical match.
+
+<img src="images/tab.jpg">
 
 This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps
+
 
 ### Prerequisites
 

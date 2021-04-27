@@ -70,7 +70,6 @@ Combining two popular and modern prediction methods, namely an expected goals mo
 Your team's goal expectancy depends on your team’s attack strength and defence strength, and as well as that of the opposite team.
 ### Poisson distribution
 The Poisson distribution is commonly used to calculate the likelihood of a specific score in football, as well as a win, lose or draw.
-
 Lets consider a hypothetical match between Man. City and Liverpool FC. Manchester is the home team, while Liverpool is the away team.
 <img src="images/10.jpg">
 

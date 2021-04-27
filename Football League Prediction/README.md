@@ -64,9 +64,7 @@ Problem Statement:
 
 Combining two popular and modern prediction methods, namely an expected goals model as well as attacking and defensive team ratings. A successful outcome for the project would be the creation of both a classification model capable of predicting a future game’s outcome, and a regression model capable of predicting a future game’s score.
 
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
-
-### Built With
+### Calculating Football Results
 
 This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * [Bootstrap](https://getbootstrap.com)

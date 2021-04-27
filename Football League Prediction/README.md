@@ -133,14 +133,18 @@ In this formula:**<br />
 **k!** is the factorial of k<br />
 <pre>
 <b>That gives us the following probability for Manchester City Goals:</b><br />
-Man. City Goals    | 0          | 1         | 2         |3          |4           |5         | <br /> 
-Probability        | 0.29229258 |0.35951987 |0.22110472 |0.09065294 |0.02787578  |0.00685744| <br />
+<b>Man. City Goals</b>    | 0          | 1         | 2         |3          |4           |5         | <br /> 
+<b>Probability</b>        | 0.29229258 |0.35951987 |0.22110472 |0.09065294 |0.02787578  |0.00685744| <br />
 
-That gives us the following probability for Liverpool Goals:<br />
-Liverpool Goals    | 0          | 1         | 2         |3          |4          |5         |  <br />
-Probability        | 0.36898474 |0.36787778 |0.18338707 |0.06094564 |0.0151907  |0.00302903|  <br />
+<b>That gives us the following probability for Liverpool Goals:</b><br />
+<b>Liverpool Goals</b>    | 0          | 1         | 2         |3          |4          |5         |  <br />
+<b>Probability</b>        | 0.36898474 |0.36787778 |0.18338707 |0.06094564 |0.0151907  |0.00302903|  <br />
 </pre>
 
+**Predicting the match outcome based on these probabilities**<br />
+To get each possible score, simply multiply the probability of each possible score by each team by the probability of each possible score by the other team. This gives you the following distribution:<br />
+<img src="images/Goals.jpg">
+As you can see, the most likely score is 1 – 1, or 1 – 0 followed by 0 – 0 or 0 – 1. Given the defence averages of both teams, it is easy to see how these would be very likely scores.<br />
 
 ### Prerequisites
 

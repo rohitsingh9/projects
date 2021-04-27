@@ -1,13 +1,4 @@
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
@@ -18,7 +9,7 @@
   <h3 align="center">Football League Predictions</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    An awesome project on Poisson distribution!
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />

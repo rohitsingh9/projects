@@ -70,7 +70,7 @@ Combining two popular and modern prediction methods, namely an expected goals mo
 Your team's goal expectancy depends on your team’s attack strength and defence strength, and as well as that of the opposite team.
 ### Poisson distribution
 The Poisson distribution is commonly used to calculate the likelihood of a specific score in football, as well as a win, lose or draw.
-Lets consider a hypothetical match between Man. City and Liverpool FC. Manchester is the home team, while Liverpool is the away team.
+Lets consider a hypothetical match between Man. City and Liverpool FC.
 <img src="images/10.jpg">
 
 ## Before calculating
@@ -88,13 +88,49 @@ Calculate Liverpool’s
 * Away goal average
 * Average goals allowed per away match
 
-Data
-* In our example, we will use the data from the 2018-2019 English Premier League to calculate a hypothetical match.
-
+In our example, we will use the data from the 2018-2019 English Premier League to calculate a hypothetical match.
 <img src="images/tab.jpg">
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps
+**Calculating Attack Strength**
+With these results, we can easily calculate attack strength for the home and away team. Attack Strength is the team’s average number of goals, divided by the league’s Average number of goals.
+**Home**
+Manchester City’s Attack Strength: 3.00 ÷ 1.53 = 1.96
+**Away**
+Liverpool’s Attack Strength: 1.78 ÷ 1.147 = 1.55
+
+**Calculating Defence Strength**
+Calculating Defence Strength is just as easy. Simply divide the team’s average number of goals allowed by the league’s average number of goals allowed.
+**Home**
+Manchester City’s Attack Strength: 0.63 ÷ 1.147 = 0.55
+**Away**
+Liverpool’s Attack Strength: 0.63 ÷ 1.532 = 0.41
+
+**Goal expectancy**
+Now that we have determined each team’s Attack Strength and Defence Strength, we can calculate each team’s likely score.
+**Manchester City goal expectancy**
+To determine how many goals Manchester City will likely score, we need to multiply Manchester City’s Attack Strength by Liverpool’s Defence Strength and the league’s average number of home goals.
+That gives us:
+1.96 × 0.41 × 1.532 = 1.23
+
+**Liverpool goal expectancy**
+To determine how many goals Liverpool will likely score, we need to multiply Liverpool’s Attack Strength by Manchester City’s Defence Strength and the league’s average number of away goals.
+That gives us:
+1.55 × 0.55 × 1.147 = 0.997
+
+Average goals scored in the match
+**Manchester City**: 1.23
+**Liverpool**: 0.997
+
+**Using the Poisson Formula to calculate the likelihood of each possible score**
+Now that we have each team’s home and away defence and attack strengths, we can easily use them with the Poisson formula to calculate the probability of any possible outcome.
+The Poisson Formula
+**P (k events in interval) = (λk e –λ) / k! 
+In this formula:**
+**P** is the probability
+**k** is the number of occurrences in the interval (number of goals)
+**λ** is the expected number of goals
+**e** is Euler's number (e = 2.71828…)
+**k!** is the factorial of k
 
 
 ### Prerequisites

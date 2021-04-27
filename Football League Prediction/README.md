@@ -91,19 +91,19 @@ Calculate Liverpool’s
 In our example, we will use the data from the 2018-2019 English Premier League to calculate a hypothetical match.
 <img src="images/tab.jpg">
 
-**Calculating Attack Strength**
-With these results, we can easily calculate attack strength for the home and away team. Attack Strength is the team’s average number of goals, divided by the league’s Average number of goals.
-**Home**
-Manchester City’s Attack Strength: 3.00 ÷ 1.53 = 1.96
-**Away**
-Liverpool’s Attack Strength: 1.78 ÷ 1.147 = 1.55
+**Calculating Attack Strength**<br />
+With these results, we can easily calculate attack strength for the home and away team. Attack Strength is the team’s average number of goals, divided by the league’s Average number of goals.<br />
+**Home**<br />
+Manchester City’s Attack Strength: 3.00 ÷ 1.53 = 1.96<br />
+**Away**<br />
+Liverpool’s Attack Strength: 1.78 ÷ 1.147 = 1.55<br />
 
-**Calculating Defence Strength**
-Calculating Defence Strength is just as easy. Simply divide the team’s average number of goals allowed by the league’s average number of goals allowed.
-**Home**
-Manchester City’s Attack Strength: 0.63 ÷ 1.147 = 0.55
-**Away**
-Liverpool’s Attack Strength: 0.63 ÷ 1.532 = 0.41
+**Calculating Defence Strength**<br />
+Calculating Defence Strength is just as easy. Simply divide the team’s average number of goals allowed by the league’s average number of goals allowed.<br />
+**Home**<br />
+Manchester City’s Attack Strength: 0.63 ÷ 1.147 = 0.55<br />
+**Away**<br />
+Liverpool’s Attack Strength: 0.63 ÷ 1.532 = 0.41<br />
 
 **Goal expectancy**
 Now that we have determined each team’s Attack Strength and Defence Strength, we can calculate each team’s likely score.
